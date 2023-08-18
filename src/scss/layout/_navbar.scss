@@ -1,0 +1,148 @@
+.navbar {
+  padding: 48px 165px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .logo {
+    margin-right: 45px;
+  }
+
+  .links-login-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .links {
+      display: flex;
+
+      .link {
+        &:not(:last-child) {
+          margin-right: 29px;
+        }
+
+        a {
+          color: $color-gray;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+
+    .login-container {
+      display: flex;
+      align-items: center;
+
+      .login {
+        color: $color-gray;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        flex-shrink: 0;
+
+  
+
+        &.active {
+          background-color: $color-green;
+          padding: 9px 23px 8px 24px;
+          color: $color-white;
+          border-radius: 28px;
+
+          &:hover{
+            background-color: #9ae3e3;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-right: 37px;
+        }
+      }
+    }
+  }
+
+  .hamburger-btn {
+    display: none;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 48px 0;
+
+    .logo {
+      margin-right: 24px;
+    }
+  }
+}
+
+@media (max-width: 478px) {
+  .navbar {
+    padding: 48px 24px;
+
+    .links-login-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      background-color: $color-dark-blue;
+      bottom: -360px;
+      left: -1000%;
+      transform: translateX(-50%);
+      width: 327px;
+      height: 383px;
+      border-radius: 10px;
+      z-index: 100;
+      transition: all 0.5s;
+      &.active {
+        left: 50%;
+      }
+
+      .links {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgba($color: #9e9aa8, $alpha: 0.25);
+        width: 80%;
+        .link {
+          margin: 25px 0;
+
+          a {
+            color: $color-white;
+            font-size: 18px;
+          }
+
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .login-container {
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        align-items: stretch;
+
+        .login {
+          color: $color-white;
+
+          &:first-child {
+            margin-top: 32px;
+          }
+
+          &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+
+    .hamburger-btn {
+      display: block;
+    }
+  }
+}

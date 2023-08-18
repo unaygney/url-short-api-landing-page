@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+.clear {
+  clear: both; }
+
+body {
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+.btn-primary {
+  padding: 14px 40px 12px 40px;
+  color: #EFF1F7;
+  border-radius: 28px;
+  background-color: #2BD0D0;
+  font-size: 20px;
+  font-weight: 700; }
+  .btn-primary:hover {
+    background-color: #9ae3e3; }
+
+.navbar {
+  padding: 48px 165px;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .navbar .logo {
+    margin-right: 45px; }
+  .navbar .links-login-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .navbar .links-login-container .links {
+      display: flex; }
+      .navbar .links-login-container .links .link:not(:last-child) {
+        margin-right: 29px; }
+      .navbar .links-login-container .links .link a {
+        color: #9E9AA8;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; }
+    .navbar .links-login-container .login-container {
+      display: flex;
+      align-items: center; }
+      .navbar .links-login-container .login-container .login {
+        color: #9E9AA8;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        flex-shrink: 0; }
+        .navbar .links-login-container .login-container .login.active {
+          background-color: #2BD0D0;
+          padding: 9px 23px 8px 24px;
+          color: #EFF1F7;
+          border-radius: 28px; }
+          .navbar .links-login-container .login-container .login.active:hover {
+            background-color: #9ae3e3; }
+        .navbar .links-login-container .login-container .login:not(:last-child) {
+          margin-right: 37px; }
+  .navbar .hamburger-btn {
+    display: none;
+    margin-left: auto; }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 48px 0; }
+    .navbar .logo {
+      margin-right: 24px; } }
+
+@media (max-width: 478px) {
+  .navbar {
+    padding: 48px 24px; }
+    .navbar .links-login-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      background-color: #3A3054;
+      bottom: -360px;
+      left: -1000%;
+      transform: translateX(-50%);
+      width: 327px;
+      height: 383px;
+      border-radius: 10px;
+      z-index: 100;
+      transition: all 0.5s; }
+      .navbar .links-login-container.active {
+        left: 50%; }
+      .navbar .links-login-container .links {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgba(158, 154, 168, 0.25);
+        width: 80%; }
+        .navbar .links-login-container .links .link {
+          margin: 25px 0; }
+          .navbar .links-login-container .links .link a {
+            color: #EFF1F7;
+            font-size: 18px; }
+          .navbar .links-login-container .links .link:not(:last-child) {
+            margin-right: 0; }
+      .navbar .links-login-container .login-container {
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        align-items: stretch; }
+        .navbar .links-login-container .login-container .login {
+          color: #EFF1F7; }
+          .navbar .links-login-container .login-container .login:first-child {
+            margin-top: 32px; }
+          .navbar .links-login-container .login-container .login:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 24px; }
+    .navbar .hamburger-btn {
+      display: block; } }
+
+.header {
+  width: 100%;
+  margin-top: 86px;
+  height: 480px;
+  background-image: url(./assets/illustration-working.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 60px; }
+  .header .content {
+    padding-left: 165px; }
+    .header .content h1 {
+      font-size: 80px;
+      color: #34313D;
+      font-weight: 700;
+      width: 565px;
+      letter-spacing: -2px;
+      line-height: 90px;
+      margin-bottom: 5px; }
+    .header .content p {
+      width: 540px;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 36px;
+      color: #9E9AA8;
+      letter-spacing: .15px;
+      margin-bottom: 52px; }
+
+@media (max-width: 768px) {
+  .header {
+    height: 960px;
+    background-position: top;
+    display: flex;
+    margin-top: 40px; }
+    .header .content {
+      margin-top: auto;
+      padding-left: 0;
+      padding-bottom: 40px;
+      text-align: center; }
+      .header .content h1 {
+        width: 100%; }
+      .header .content p {
+        width: 100%; } }
+
+@media (max-width: 478px) {
+  .header {
+    height: 800px;
+    margin-top: 0; }
+    .header .content h1 {
+      font-size: 42px;
+      letter-spacing: -1.05px;
+      line-height: 48px;
+      text-align: center;
+      margin-bottom: 15px; }
+    .header .content p {
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: .123px;
+      text-align: center;
+      margin-bottom: 32px; } }
+
+.main {
+  background-color: #EFF1F7;
+  width: 100%;
+  padding: 0 165px; }
+  .main .form {
+    width: 1110px;
+    height: 168px;
+    padding: 0 65px;
+    background-image: url(../../assets/bg-boost-desktop.svg); }
