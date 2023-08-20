@@ -111,7 +111,8 @@ body {
           margin-right: 37px; }
   .navbar .hamburger-btn {
     display: none;
-    margin-left: auto; }
+    margin-left: auto;
+    background-color: transparent; }
 
 @media (max-width: 768px) {
   .navbar {
