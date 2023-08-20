@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/unaygney/url-short-api-landing-page)
-- Live Site URL: [Live site URL here](https://64e222dba489b66c4234cf2b--dazzling-pastelito-a5b780.netlify.app/)
+- Live Site URL: [Live site URL here](https://64e2252611201169a32796eb--boisterous-narwhal-d479ec.netlify.app/)
 
 ## My process
 
