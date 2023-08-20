@@ -11,9 +11,11 @@
     "sass": "node-sass -w src/scss/ -o src/ --recursive"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
